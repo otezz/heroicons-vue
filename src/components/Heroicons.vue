@@ -1,5 +1,10 @@
 <template>
-  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" v-html="path"></svg>
+  <svg
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    v-html="path"
+  ></svg>
 </template>
 
 <script>
@@ -10,7 +15,7 @@ export default {
   props: {
     type: {
       type: String,
-      default: () => 'outline',
+      default: () => 'medium',
     },
     icon: {
       type: String,
@@ -25,7 +30,7 @@ export default {
   },
   computed: {
     path() {
-      if (this.type === 'outline') {
+      if (this.type === 'medium') {
         return this.heroiconsOutline[this.icon];
       }
 
