@@ -1,24 +1,34 @@
-# vue-heroicons
+# heroicons-vue
 
-## Project setup
-```
-yarn install
-```
+Vue component for [Heroicons](https://heroicons.com/) aimed for flexibility.
 
-### Compiles and hot-reloads for development
+## Install
+
 ```
-yarn serve
+npm i @otezz/heroicons-vue
 ```
 
-### Compiles and minifies for production
-```
-yarn build
+## Usage
+
+```vue
+<template>
+  <Heroicons class="w-5 h-5" icon="home" />
+</template>
+
+<script>
+import Heroicons from '@otezz/heroicons-vue';
+
+export default {
+  components: {
+    Heroicons,
+  },
+};
+</script>
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
+## Props
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+| Name   | Description | Required | Default value |
+| ------ | ----------- | -------- | ------------- |
+| `name` | Icon name   | yes      | -             |
+| `type` | Icon type   | no       | `medium`      |
