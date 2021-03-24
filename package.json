@@ -1,12 +1,23 @@
 {
   "name": "@otezz/heroicons-vue",
   "author": "Seto Kuslaksono <kuslaksono@gmail.com>",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
   "main": "./dist/heroicons-vue.common.js",
   "files": [
     "dist"
   ],
+  "keywords": [
+    "heroicons",
+    "vue"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/otezz/heroicons-vue.git"
+  },"bugs": {
+    "url": "https://github.com/otezz/heroicons-vue/issues"
+  },
+  "homepage": "https://github.com/otezz/heroicons-vue",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "node buildIcons && vue-cli-service build --target lib --name heroicons-vue src/main.js",
